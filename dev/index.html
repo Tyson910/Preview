@@ -9,15 +9,36 @@
 <meta itemprop="name" content="Ragain's flooring">
 <meta itemprop="description" content="">
 
+<link href="./styles.css" rel="stylesheet" />
+<link href="./nav-bar.css" rel="stylesheet" />
 <title>Ragains Flooring</title>
 </head>
 
 <body>
+    <header class="topnav " id="myTopnav">
+        <a href="#top" class="active" >Home</a>
+        <a href="#services" >Services</a>
+        <a href="#about-us" >About Us</a>
+        <a href="#contact-form" >Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">
+          &#9776;
+        </a>
+      </header>
+      <div id="myNav" class="overlay row ">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#top" onclick="closeNav()">Home</a>
+            <a href="#services" onclick="closeNav()">Services</a>
+            <a href="#about-us" onclick="closeNav()">About Us</a>
+            <a href="#contact-form" onclick="closeNav()" >Contact</a>
+        </div>
+      </div>
 
-    <div id="hero" style="background: url(white-wood.jpeg);">
+
+    <div class="hero" style="background: url(white-wood.jpeg);">
         <h1>Ragains Flooring</h1>
-
     </div>
+    
     <main>
         <section id="services">
             <h2>Featured Services</h2>
@@ -38,9 +59,14 @@
 
         </div>
         <div id="contact-form">
-            
+
         </div>
     </footer>
-
+    <script>
+        function openNav() {document.getElementById("myNav").style.height = "100%";document.getElementById("myTopnav").style.zIndex = "0";document.getElementById("myTopnav").style.height = "0%";}
+        
+        function closeNav() {document.getElementById("myNav").style.height = "0%";document.getElementById("myTopnav").style.zIndex = "99";document.getElementById("myTopnav").style.height = "initial";}
+    
+    </script>    
 </body>
 </html>
