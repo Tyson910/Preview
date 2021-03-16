@@ -11,11 +11,12 @@
 
 <link href="./styles.css" rel="stylesheet" />
 <link href="./nav-bar.css" rel="stylesheet" />
+<link href="./grids.css" rel="stylesheet" />
 <title>Ragains Flooring</title>
 </head>
 
 <body>
-    <header class="topnav " id="myTopnav">
+    <header class="topnav row" id="myTopnav">
         <a href="#top" class="active" >Home</a>
         <a href="#services" >Services</a>
         <a href="#about-us" >About Us</a>
@@ -35,38 +36,72 @@
       </div>
 
 
-    <div class="hero" style="background: url(white-wood.jpeg);">
-        <h1>Ragains Flooring</h1>
+    <div class="hero row" style="background: url(white-wood.jpeg); height:50vh;">
+        <h1 style="color:red;">Ragains Flooring</h1>
     </div>
     
-    <main>
-        <section id="services">
-            <h2>Featured Services</h2>
-            <div id="service-grid"></div>
-        </section>
+    <main class="row">
         <section id="about-us">
-            <h2>About Us</h2>
+            <h2 >About Us</h2>
             <div>
-                <p>lorem ipsum ajfldksjfs
-                    aldsfjl;sjfk;skfjsfk
-                    a;lsdgjsdalgjs;lgkj
-                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </section>
+
+        <section id="services">
+            <h2 style='text-align: center;'>Featured Services</h2>
+            <div class="service-grid">
+                
+                <img alt="demo image" src="./DemoImg/pic1.jpeg" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                <img alt="demo image" src="./DemoImg/pic2.jpeg" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <img alt="demo image" src="./DemoImg/pic3.jpeg" />
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <img alt="demo image" src="./DemoImg/pic4.jpeg" />
+    
+            </div>
+        </section>
+
     </main>
-    <footer>
-        <div id="contact-info">
-
+    <footer class="row">
+        <div id="contact-info" style="margin-top:5vh;text-align: center;">
+            <h2>Contact Us</h2>
+            <p>m.ragain@hotmail.com</p>
+            <p>(573) 825-2319</p>
         </div>
-        <div id="contact-form">
+        <form id='contact-form' style="display: flex; flex-flow: column;">
+            <h2 style='text-align: center;'>Contact</h2>
+    
+            <label for="first-name">First Name * </label>
+            <input required type="text" name="first-name" id="first-name" class='contact-input' />
 
-        </div>
+            <label for="last-name">Last Name * </label>
+            <input required type="text"  name="last-name" id="last-name" class='contact-input'/>
+
+            <label for="phoneNum">Phone Number</label>
+            <input type="tel" name="phoneNum" id="phoneNum" class='contact-input'/>
+
+            <label for="email">Email Address *</label>
+            <input required type="email" name="email" id="email" class='contact-input' />
+
+            <label for="inquiry"> Message * </label>
+            <textarea required name="inquiry" id="inquiry"></textarea>
+
+            <p>* required</p>
+            <button type="submit" class="pageclip-form__submit">Submit</button>
+    
+        </form>
     </footer>
     <script>
         function openNav() {document.getElementById("myNav").style.height = "100%";document.getElementById("myTopnav").style.zIndex = "0";document.getElementById("myTopnav").style.height = "0%";}
         
         function closeNav() {document.getElementById("myNav").style.height = "0%";document.getElementById("myTopnav").style.zIndex = "99";document.getElementById("myTopnav").style.height = "initial";}
-    
     </script>    
 </body>
 </html>
