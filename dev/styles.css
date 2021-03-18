@@ -1,27 +1,66 @@
 *{
     box-sizing: border-box;
     margin: 0;
-
+    scroll-behavior: smooth;
 }
-
+body{
+    background: url('./white-wood.jpeg');
+}
 img{
     max-width: 100%;
     max-height: 100%;
 }
+.hero{
+    display: flex;
+    background: rgba( 211, 211, 211, 0.30 );
+    backdrop-filter: blur( 16.0px );
+    -webkit-backdrop-filter: blur( 16.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.hero div{
+    width: 25%;
+    align-self: center;
+}
+.hero img{
+    width: 76%;
+}
+main, footer{
+    box-shadow: 0 20px 26px rgb(11 9 10);
 
-p{
+}
+main.row{
+    background: lightgray;
+    background: #3d3d3d;
+}
+#about-us{
+    background: #D7D7D7;
+}
+#services{
+    background: #a8a8a8;
+}
+footer{
+    background: #0B090A;
+    color:white;
+}
+p, h3{
     text-align: center;
+}
+h2{
+    margin: 0 0 5vh 0;
+}
+h3{
+    padding-top: 7%;
 }
 .service-grid > p{
     padding:12%;
 }
-section{
-    margin: 6vh auto;
-}
 #about-us{
     text-align: center;
 }
+
 form{
+    
     background: rgba( 220,20,60, .04 );
     box-shadow: 0 8px 32px 0 rgb(220 20 60 / 30%);
     backdrop-filter: blur( 15.5px );
@@ -29,6 +68,7 @@ form{
     border-radius: 10px;
     padding: 5vh 0;
 }
+
 
 label{
     margin: 1vh 0;

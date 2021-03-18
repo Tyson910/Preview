@@ -2,14 +2,48 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
+section{
+    padding: 25vh 0;
+}
 .row{
     max-width: 988px;
     margin: 0 auto;
 }
 
+@media screen and (min-width: 600px){
+    footer{
+        display: flex;
+        flex-flow: row;
+    }
+    #contact-info{
+        width: 50%;
+    }
+    #contact-form{
+        width:50%;
+    }
+}
 @media screen and (max-width: 600px) {
     .service-grid{
         grid-template-columns: 1fr;
     }
+    .hero{
+        flex-flow: column-reverse;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .hero div{
+        width: 25%;
+        align-self: center;
+        padding: 10vh 0;
+    }
+    /* ensures text always follows the correct pic*/
+    .service-grid > div:nth-child(5){
+        grid-row: 6 / span 1;
+    }
+    .service-grid > div:nth-child(7){
+        grid-row: 8 / span 1;
+    }
 }
+
+
