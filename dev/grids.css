@@ -6,7 +6,7 @@ section{
     padding: 25vh 0;
 }
 .row{
-    max-width: 988px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -43,6 +43,9 @@ section{
     }
     .service-grid > div:nth-child(7){
         grid-row: 8 / span 1;
+    }
+    footer{
+        padding: 5vh 1vw;
     }
 }
 
