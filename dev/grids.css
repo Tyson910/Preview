@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-section{
-    padding: 25vh 0;
+.service-grid > p{
+    padding:12%;
 }
 .row{
     max-width: 1200px;
@@ -26,17 +26,6 @@ section{
     .service-grid{
         grid-template-columns: 1fr;
     }
-    .hero{
-        flex-flow: column-reverse;
-    }
-    .hero img{
-        width: 100%;
-    }
-    .hero div{
-        width: 25%;
-        align-self: center;
-        padding: 10vh 0;
-    }
     /* ensures text always follows the correct pic*/
     .service-grid > div:nth-child(5){
         grid-row: 6 / span 1;
@@ -46,6 +35,9 @@ section{
     }
     footer{
         padding: 5vh 1vw;
+    }
+    body{
+        background: #021127;
     }
 }
 

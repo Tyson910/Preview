@@ -1,0 +1,18 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+body{
+    font-size: 100%;
+}
+.hero h1{
+    font-family: 'Black Ops One', cursive;
+}
+main, footer{
+    font-size: 1.09rem;
+}
+main h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.4rem;
+}

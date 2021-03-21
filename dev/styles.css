@@ -6,11 +6,19 @@
 body{
     background: whitesmoke;
     background: #345E9D;
-
 }
 img{
     max-width: 100%;
     max-height: 100%;
+}
+p, h3{
+    text-align: center;
+}
+h2{
+    margin: 0 0 5vh 0;
+}
+h3{
+    padding-top: 7%;
 }
 .center-text{
     text-align: center;
@@ -21,9 +29,6 @@ img{
     background: url(./white-wood.jpeg);
     padding: 25vh 0;
 }
-main{
-    color:#021127;
-}
 main, footer, .hero{
     box-shadow: 0 20px 26px rgb(11 9 10);
 }
@@ -32,17 +37,15 @@ main.row{
     background: lightgray;
     background: #3d3d3d;
 }
+section{
+    padding: 10vh 0 20vh;
+}
+section h2{
+    padding: 10vh 0;
+}
+
 #about-us{
     background: #D7D7D7;
-}
-#services{
-    background: #a8a8a8;
-}
-footer{
-    background: #021127;
-    color:white;
-}
-p, h3{
     text-align: center;
 }
 #about-us p{
@@ -51,11 +54,8 @@ p, h3{
     text-align: left;
     padding: 0 5vw; 
 }
-h2{
-    margin: 0 0 5vh 0;
-}
-h3{
-    padding-top: 7%;
+#services{
+    background: #a8a8a8;
 }
 #services{
     padding: 6vh 0 25vh;
@@ -64,12 +64,12 @@ h3{
     margin:0;
     padding: 10vh 0;
 }
-.service-grid > p{
-    padding:12%;
+
+footer{
+    background: #021127;
+    color:white;
 }
-#about-us{
-    text-align: center;
-}
+
 form{
     display: flex; 
     flex-flow: column;
@@ -85,6 +85,7 @@ input, textarea{
     margin: 1vh auto;
     border-radius: 4px;
     border: solid firebrick 2px;
+    border: solid 2px #345e9d;
     }
 textarea{
     max-width: 100%;
@@ -95,27 +96,31 @@ textarea{
 *:focus{
     outline: none;
 }
-button[type=submit], button{
+button[type=submit]{
+    font-size: 1.2rem;
     width: 26%;
     margin: 5vh auto;
-    border-radius: 4px;
-    background: #392324;
+    border-radius: 3px;
+    border: 0;
     box-shadow: -1px 1px 2px #321e1f, 1px -1px 2px #402829;
-    color: white;
+    background: #c2d8fa;
+    color: #021127;
     padding: 2%;
 }
-button[type=submit]:hover, button:hover{
+button[type=submit]:hover{
     transform: scale(1.01);
     animation-timing-function: ease-in-out;
+    background: #9cbae8;
 }
-button[type=submit]:active, button:active{
+button[type=submit]:active{
+    background: #345E9d;
     box-shadow: inset -1px 1px 2px #321e1f,
     inset 1px -1px 2px #402829;
 }
 form p{
     margin-bottom: 0;
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
 }
 footer h2{
     margin: 0 6%;
