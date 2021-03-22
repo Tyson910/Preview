@@ -69,6 +69,16 @@ footer{
     background: #021127;
     color:white;
 }
+@media screen and (min-width: 600px){
+    #contact-info h3:first-of-type, form label:first-of-type{
+        padding-top: 7vh;
+    }
+}
+@media screen and (max-width: 600px){
+    #contact-info h3:first-of-type, form label:first-of-type{
+        padding-top: 4vh;
+    }
+}
 
 form{
     display: flex; 
@@ -76,6 +86,7 @@ form{
     background: rgba( 220,20,60, .04 );
     padding: 5vh 0;
 }
+
 label{
     margin: 1vh 0;
     text-align: center;
@@ -106,6 +117,7 @@ button[type=submit]{
     background: #c2d8fa;
     color: #021127;
     padding: 2%;
+    box-shadow: 0 20px 26px rgb(11 9 10);
 }
 button[type=submit]:hover{
     transform: scale(1.01);
@@ -126,4 +138,6 @@ footer h2{
     margin: 0 6%;
     padding: 2vh 0;
     background: #345E9D;
+    box-shadow: 0 20px 26px rgb(11 9 10);
+
 }
