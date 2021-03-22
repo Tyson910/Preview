@@ -73,9 +73,18 @@ footer{
     margin-top:5vh;
     color: white;
 }
+#contact-info a{
+    padding-top: 1vh;
+    text-decoration: none;
+    color: inherit;
+}
 @media screen and (min-width: 600px){
     #contact-info h3:first-of-type, form label:first-of-type{
-        padding-top: 7vh;
+        /*top rl bottom*/
+        padding: 7vh 0 2vh;
+    }
+    #contact-info h3{
+        padding: 7% 0 2vh;
     }
 }
 @media screen and (max-width: 600px){
@@ -97,7 +106,7 @@ label{
 }
 input, textarea{
     width: 50%;
-    margin: 1vh auto;
+    margin: 2vh auto;
     border-radius: 4px;
     border: solid firebrick 2px;
     border: solid 2px #345e9d;
