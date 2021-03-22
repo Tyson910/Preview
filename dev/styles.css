@@ -69,6 +69,10 @@ footer{
     background: #021127;
     color:white;
 }
+#contact-info{
+    margin-top:5vh;
+    color: white;
+}
 @media screen and (min-width: 600px){
     #contact-info h3:first-of-type, form label:first-of-type{
         padding-top: 7vh;

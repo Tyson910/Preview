@@ -1,6 +1,8 @@
 .service-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    max-width: 95%;
+    margin: 0 auto;
 }
 .service-grid > p{
     padding:12%;
@@ -25,6 +27,9 @@
 @media screen and (max-width: 600px) {
     .service-grid{
         grid-template-columns: 1fr;
+        max-width: 90%;
+        row-gap: 3vh;
+
     }
     /* ensures text always follows the correct pic*/
     .service-grid > div:nth-child(5){
